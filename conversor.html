@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestInk – Conversor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icons/favicon.ico" />
+</head>
+
+<body>
+    <header class="universal_header">
+        <section class="menu">
+            <a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+            <nav class="menu_all">
+                <ul class="ul_header">
+                    <a href="index.html" class="links_header">
+                        <li class="li_header">| Home</li>
+                    </a>
+                    <a href="cadastro_login.html" class="links_header">
+                        <li class="li_header">| Cadastro/Login</li>
+                    </a>
+                    <a href="calculadora.html" class="links_header">
+                        <li class="li_header">| Calculadora</li>
+                    </a>
+                    <a href="conversor.html" class="links_header">
+                        <li class="li_header">| Cotação de moeda</li> <!-- LINKAR COTAÇÃO -->
+                    </a>
+                    <a href="contato.html" class="links_header">
+                        <li class="li_header">| Contato</li>
+                    </a>
+                    <li class="li_header"><input type="text" name="pesquisa" placeholder="Pesquisa..." id="pesquisa">
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main class="main_index" id="homee">
+        <section class="botoes">
+            <button class="botoes_acessibilidade" id="fonte_maior" onclick="aumentarFonte()">A+</button>
+            <button class="botoes_acessibilidade" id="fonte_menor" onclick="diminuirFonte()">A-</button>
+            <img src="img/icons/dark_mode_off.png" alt="" id="dark_mode">
+        </section>
+        <section class="conversor_banner">
+            <section class="chamada">
+            <section class="conversor_retangle">
+                <h1 id="h1_conversor">
+                    O que é uma conversão de moeda?</h1>
+                <p id="p_conversor">Uma casa de câmbio é um negócio licenciado que permite aos clientes trocar uma moeda por outra. A troca de dinheiro físico (moedas e notas de papel) geralmente é feita no balcão de um caixa postal, que pode ser encontrado em vários locais, como aeroportos, bancos, hotéis e resorts. As trocas de moeda ganham dinheiro cobrando uma taxa nominal e através do spread bid-ask em uma moeda.</p>
+                <button id="button_conversor"><a href="#titlemaster">Conheça nosso conversor</a></button>
+        </section>
+    </section>
+        <section class="conversor_main">
+            <h1 id="titlemaster" class="title_conversor">Conversor de Moedas</h1>
+            <h3 class="texto_conversor">Insira um Valor:</h3>
+            <input type="number" class="campoDeDigitacao" min="0" max="60000" id="num_conversor">
+            <h3 class="title_conversor">Selecione a Moeda</h3>
+            <input type="button" onclick="converterEmReal()" value="Real" id="moedas_botao">
+            <input type="button" onclick="converterEmDolarAmericano()" value="Dolar Americano" id="moedas_botao">
+            <input type="button" onclick="converterEmDolarCanadense()" value="Dolar Canadense" id="moedas_botao">
+            <input type="button" onclick="converterEmEuro()" value="Euro" id="moedas_botao">
+            <input type="button" onclick="converterEmPesoArgentino()" value="Peso Argentino" id="moedas_botao">
+            <input type="button" onclick="converterEmLibra()" value="Libra" id="moedas_botao">
+            <p id="result"></p>
+        </section>
+    </section>
+    </main>
+
+    <footer class="universal_footer">
+        <section class="redes_sociais">
+            <a href=""><img src="img/icons/facebook.png" alt="" class="redes_sociais_logos"></a>
+            <a href=""><img src="img/icons/instagram.png" alt="" class="redes_sociais_logos"></a>
+            <a href=""><img src="img/icons/linkedin.png" alt="" class="redes_sociais_logos"></a>
+        </section>
+        <section class="meio">
+            <img src="img/img_logo.png" alt="" class="img_logo" id="logo_footer">
+            <p id="copyright"> 2021 &copy; Todos os direitos reservados.</p>
+        </section>
+        <nav>
+            <ul class="ul_footer">
+                <a href="#homee" class="links_footer">
+                    <li class="li_footer">Home |</li>
+                </a>
+                <a href="cadastro_login.html" class="links_footer">
+                    <li class="li_footer">Cadastro/Login |</li>
+                </a>
+                <a href="calculadora.html" class="links_footer">
+                    <li class="li_footer">Calculadora |</li>
+                </a>
+                <a href="conversor.html" class="links_footer">
+                    <li class="li_footer">Cotação de moeda |</li>
+                </a>
+                <a href="contato.html" class="links_footer">
+                    <li class="li_footer">Contato |</li>
+                </a>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="script_conversor.js"></script>
+</body>
+
+</html>
